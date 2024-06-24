@@ -2017,6 +2017,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "global_namespace"
+        },
+        {
+          "type": "SYMBOL",
           "name": "type_assertion"
         },
         {
@@ -7543,6 +7547,23 @@
               "type": "BLANK"
             }
           ]
+        }
+      ]
+    },
+    "global_namespace": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "global"
+        },
+        {
+          "type": "FIELD",
+          "name": "body",
+          "content": {
+            "type": "SYMBOL",
+            "name": "statement_block"
+          }
         }
       ]
     },
